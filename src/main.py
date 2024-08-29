@@ -38,10 +38,8 @@ def display_header():
 def display_about():
     display_header()
     print("\nAbout\n")
-    print("NsySafePass Password Manager is a homemade password manager written in Python.")
-    print("It was created to complete the recruiting tasks of the MBC laboratory.")
-    print("This application has 3 main features: password manager,")
-    print("password generator, and password strength checker. Hope you like it!")
+    print("NsySafePass is a homemade password manager tool written in Python.")
+    print("This tools has 3 main features: password manager, password generator, and password strength checker. Hope you like it!")
     print("\nWarm regards, \n\nNsyaghis, the creator of this app.\n")
 
     # Pause to keep the screen visible
@@ -69,14 +67,14 @@ def generate_password(length=12, use_lowercase=True, use_uppercase=True, use_dig
     if use_symbols:
         characters += string.punctuation
 
-    if mode == 'easy_to_read':
-        characters = characters.replace('l', '').replace('I', '').replace('1', '').replace('0', '').replace('O', '')
-    elif mode == 'easy_to_say':
-        vowels = 'aeiou'
-        consonants = ''.join(set(string.ascii_lowercase) - set(vowels))
-        characters = consonants + vowels
-        if use_uppercase:
-            characters += characters.upper()
+    # if mode == 'easy_to_read':
+    #     characters = characters.replace('l', '').replace('I', '').replace('1', '').replace('0', '').replace('O', '')
+    # elif mode == 'easy_to_say':
+    #     vowels = 'aeiou'
+    #     consonants = ''.join(set(string.ascii_lowercase) - set(vowels))
+    #     characters = consonants + vowels
+    #     if use_uppercase:
+    #         characters += characters.upper()
 
     if not characters:
         raise ValueError("No character types selected!")
@@ -197,15 +195,18 @@ def main():
             use_digits = input("Include digits? (y/n): ").lower() == 'y'
             use_symbols = input("Include symbols? (y/n): ").lower() == 'y'
             
-            while True:
-                mode = input("Choose mode (all/easy_to_read/easy_to_say): ").lower()
-                if mode in ['all', 'easy_to_read', 'easy_to_say']:
-                    break
-                else:
-                    print("Invalid mode. Please choose from 'all', 'easy_to_read', or 'easy_to_say'.")
+            # while True:
+            #     mode = input("Choose mode (all/easy_to_read/easy_to_say): ").lower()
+            #     if mode in ['all', 'easy_to_read', 'easy_to_say']:
+            #         break
+            #     else:
+            #         print("Invalid mode. Please choose from 'all', 'easy_to_read', or 'easy_to_say'.")
             
-            password = generate_password(length, use_lowercase, use_uppercase, use_digits, use_symbols, mode)
-            print(f"Generated Password: {password}")
+            password = generate_password(length, use_lowercase, use_uppercase, use_digits, use_symbols)
+            print(f"\nGenerated Password: {password}")
+
+            input("\nPress Enter to continue...")
+
         
         elif choice == '2':
             display_header()
