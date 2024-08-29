@@ -168,10 +168,9 @@ def display_header():
 def display_about():
     display_header()
     print("\nAbout\n")
-    print("NsySafePass is a homemade password manager written in Python.")
-    print("It was created to complete the recruiting tasks of the MBC laboratory.")
-    print("This application has 3 main features which can be a passwod manager,")
-    print("password generator and password strength checker. Hope you like it!")
+    print("NsySafePass is a homemade password manager tool written in Python.")
+    print("This tool has 3 main features: password manager, password generator,")
+    print("and password strength checker. Hope you like it!")
     print("\nWarm regards, \n\nNaisya Aghis, the creator of this app.\n")
 
     # Biar ga langsung diclear
