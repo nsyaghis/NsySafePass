@@ -187,7 +187,7 @@ def main():
     while True:
         display_header()
         print("\nMain Menu\n")
-        print("1. Password Manager")
+        print("1. Start")
         print("2. About")
         print("3. Exit")
 

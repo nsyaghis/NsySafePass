@@ -29,7 +29,6 @@ def display_header():
 
     """)
 
-                                                                                                                            
     print("\n\nNsySafePass ")
     print("\nNaisya Aghis Nabila")
     print("-------------------------")
@@ -39,7 +38,7 @@ def display_about():
     display_header()
     print("\nAbout\n")
     print("NsySafePass is a homemade password manager tool written in Python.")
-    print("This tools has 3 main features: password manager, password generator, and password strength checker. Hope you like it!")
+    print("This tool has 3 main features: password manager, password generator, and password strength checker. Hope you like it!")
     print("\nWarm regards, \n\nNsyaghis, the creator of this app.\n")
 
     # Pause to keep the screen visible
@@ -48,14 +47,14 @@ def display_about():
 # Main Menu Function
 def main_menu():
     print("\nMain Menu")
-    print("1. Password Generator")
-    print("2. Password Manager")
+    print("1. Password Manager")
+    print("2. Password Generator")
     print("3. Password Strength Checker")
     print("4. About")
     print("5. Exit")
 
 # Password Generator
-def generate_password(length=12, use_lowercase=True, use_uppercase=True, use_digits=True, use_symbols=True, mode='all'):
+def generate_password(length=12, use_lowercase=True, use_uppercase=True, use_digits=True, use_symbols=True):
     characters = ''
     
     if use_lowercase:
@@ -66,15 +65,6 @@ def generate_password(length=12, use_lowercase=True, use_uppercase=True, use_dig
         characters += string.digits
     if use_symbols:
         characters += string.punctuation
-
-    # if mode == 'easy_to_read':
-    #     characters = characters.replace('l', '').replace('I', '').replace('1', '').replace('0', '').replace('O', '')
-    # elif mode == 'easy_to_say':
-    #     vowels = 'aeiou'
-    #     consonants = ''.join(set(string.ascii_lowercase) - set(vowels))
-    #     characters = consonants + vowels
-    #     if use_uppercase:
-    #         characters += characters.upper()
 
     if not characters:
         raise ValueError("No character types selected!")
@@ -178,41 +168,7 @@ def main():
 
         if choice == '1':
             display_header()
-            
-            print("\nPassword Generator")
-            
-            while True:
-                try:
-                    length = int(input("Enter the desired password length: "))
-                    if length < 1:
-                        raise ValueError
-                    break
-                except ValueError:
-                    print("Invalid length. Please enter a positive integer.")
-            
-            use_lowercase = input("Include lowercase letters? (y/n): ").lower() == 'y'
-            use_uppercase = input("Include uppercase letters? (y/n): ").lower() == 'y'
-            use_digits = input("Include digits? (y/n): ").lower() == 'y'
-            use_symbols = input("Include symbols? (y/n): ").lower() == 'y'
-            
-            # while True:
-            #     mode = input("Choose mode (all/easy_to_read/easy_to_say): ").lower()
-            #     if mode in ['all', 'easy_to_read', 'easy_to_say']:
-            #         break
-            #     else:
-            #         print("Invalid mode. Please choose from 'all', 'easy_to_read', or 'easy_to_say'.")
-            
-            password = generate_password(length, use_lowercase, use_uppercase, use_digits, use_symbols)
-            print(f"\nGenerated Password: {password}")
-
-            input("\nPress Enter to continue...")
-
-        
-        elif choice == '2':
-            display_header()
-            
             print("\nPassword Manager")
-            
             while True:
                 print("1. Add a new password")
                 print("2. View all passwords")
@@ -226,14 +182,25 @@ def main():
                     username = input("Enter the username: ")
                     while True:
                         try:
-                            password = getpass("Enter the password: ")
-                            if len(password) < 8:
-                                raise ValueError
+                            password_choice = input("Do you want to generate a password? (y/n): ").lower()
+                            if password_choice == 'y':
+                                length = int(input("Enter the desired password length: "))
+                                use_lowercase = input("Include lowercase letters? (y/n): ").lower() == 'y'
+                                use_uppercase = input("Include uppercase letters? (y/n): ").lower() == 'y'
+                                use_digits = input("Include digits? (y/n): ").lower() == 'y'
+                                use_symbols = input("Include symbols? (y/n): ").lower() == 'y'
+                                password = generate_password(length, use_lowercase, use_uppercase, use_digits, use_symbols)
+                                print(f"Generated Password: {password}")
+                            else:
+                                password = getpass("Enter the password: ")
+                                if len(password) < 8:
+                                    raise ValueError
                             break
                         except ValueError:
                             print("Password must be at least 8 characters long.")
                     
-                    add_password(account, username, password)
+                    strength = check_password_strength(password)  # Check the strength of the password
+                    add_password(account, username, password)  # Store the password
                 elif sub_choice == '2':
                     view_passwords()
                 elif sub_choice == '3':
@@ -244,34 +211,41 @@ def main():
                 else:
                     print("Invalid option, please try again.")
         
+        elif choice == '2':
+            display_header()
+            print("\nPassword Generator")
+            length = int(input("Enter the desired password length: "))
+            use_lowercase = input("Include lowercase letters? (y/n): ").lower() == 'y'
+            use_uppercase = input("Include uppercase letters? (y/n): ").lower() == 'y'
+            use_digits = input("Include digits? (y/n): ").lower() == 'y'
+            use_symbols = input("Include symbols? (y/n): ").lower() == 'y'
+            password = generate_password(length, use_lowercase, use_uppercase, use_digits, use_symbols)
+            print(f"Generated Password: {password}")
+            check_password_strength(password)
+            input("\nPress Enter to continue...")
+
+
         elif choice == '3':
             display_header()
-            
             print("\nPassword Strength Checker")
-            
-            while True:
-                try:
-                    password = input("Enter a password to check its strength: ")
-                    if len(password) < 8:
-                        raise ValueError
-                    break
-                except ValueError:
-                    print("Password must be at least 8 characters long.")
-            
-            check_password_strength(password)
+            password = input("Enter a password to check its strength: ")
+            if len(password) >= 8:
+                check_password_strength(password)
+                input("\nPress Enter to continue...")
 
+            else:
+                print("Password must be at least 8 characters long.")
+        
         elif choice == '4':
             display_about()  # Show the about information
             
         elif choice == '5':
             display_header()
-            
             print("Exiting the program.")
             break
         
         else:
             display_header()
-            
             print("Invalid option, please try again.")
 
 if __name__ == "__main__":
