@@ -245,6 +245,7 @@ def main():
 
                 elif sub_choice == '2':
                     view_passwords()
+                    input("\nPress Enter to continue...")
 
                 elif sub_choice == '3':
                     account = input("Enter the account name to search: ")
