@@ -1,8 +1,6 @@
 # NsySafePass
 
-NsySafePass is a homemade password manager tool written in Python.      
-This tool has 3 main features: password manager, password generator,    
-and password strength checker. Hope you like it!
+NsySafePass is a homemade password manager tool written in Python. This tool has 3 main features: password manager, password generator, and password strength checker. Hope you like it!
 
 Warm regards,
 
