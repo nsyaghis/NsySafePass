@@ -8,19 +8,19 @@ Naisya Aghis, the creator of this app.
 
 ## How To Use
 
-clone this repository
+Clone this repository
 ```
 git clone https://github.com/nsyaghis/nsysafepass.git
 ```
 
-enter the directory
+Enter the directory
 ```
 cd nsysafepass
 ```
 > [!IMPORTANT]  
 > Make sure your operating system has already installed the latest version of python languange! See the documentation for how to install it: https://www.python.org/downloads/
 
-run the tool!
+Run the tool!
 ```
 python ./src/nsysafepass.py
 ```
