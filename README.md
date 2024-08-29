@@ -4,7 +4,7 @@ NsySafePass is a homemade password manager written in Python. It was created to 
 
 Warm regards,
 
-Naisya Aghis, the creator of this app.
+Naisya Aghis, the creator of this tool.
 
 ## How To Use
 
@@ -24,3 +24,5 @@ Run the tool!
 ```
 python ./src/nsysafepass.py
 ```
+
+Enjoy your day!🌻
