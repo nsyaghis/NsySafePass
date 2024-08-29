@@ -8,6 +8,12 @@ Naisya Aghis, the creator of this app.
 
 ## How To Use
 
+clone this repository
+```
+git clone https://github.com/nsyaghis/nsysafepass.git
+```
+
+run the tool!
 ```
 python ./src/nsysafepass.py
 ```
