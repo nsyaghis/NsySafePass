@@ -6,6 +6,8 @@ Warm regards,
 
 Naisya Aghis, the creator of this tool.
 
+[![Follow on LinkedIn](https://img.shields.io/badge/Follow%20on%20LinkedIn-%230077B5.svg?style=social&logo=linkedin)](https://www.linkedin.com/in/nsyaghis/)
+
 ## How To Use
 
 Clone this repository
