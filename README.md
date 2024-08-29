@@ -17,6 +17,8 @@ enter the directory
 ```
 cd nsysafepass
 ```
+> [!IMPORTANT]  
+> Make sure your operating system has already installed the latest version of python languange!
 
 run the tool!
 ```
