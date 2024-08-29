@@ -13,6 +13,11 @@ clone this repository
 git clone https://github.com/nsyaghis/nsysafepass.git
 ```
 
+enter the directory
+```
+cd nsysafepass
+```
+
 run the tool!
 ```
 python ./src/nsysafepass.py
