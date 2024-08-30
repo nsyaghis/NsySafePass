@@ -76,5 +76,6 @@ __Python 3__
 python3 
 
 ## Sample Screenshots
+![screenshot-1](https://github.com/user-attachments/assets/cf3e1722-259e-4c19-95ff-42258aed4a53)
 
 # Enjoy your day!🌻
