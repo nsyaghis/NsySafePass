@@ -28,7 +28,30 @@ cd nsysafepass
 python ./src/nsysafepass.py
 ```
 
-# Needs Updated Below
+## How to use
+After you run nsyaghis, you'll see the main menu with three options:
+- Start: This takes you to the main features of this app.
+- About: Displays information about the app.
+- Exit: Exits the app
+
+After selecting "Start," you'll see options to add a new password, view all stored passwords, or search for a password by account name.
+
+#### Add a New Password
+- Enter Account Name: Type the name of the account (e.g., "instagram") and press Enter.
+- Enter Username: Type the username associated with the account and press Enter.
+- Enter Password:
+    - If you already have a password, type it and press Enter.
+    - If you want the app to generate a password, just press Enter without typing anything.
+    - If you choose to generate a password, the app will ask for your preferences:
+        - Enter the desired password length
+        - Indicate whether to include lowercase letters, uppercase letters, digits, and symbols by typing "y" (yes) or "n" (no) for each.
+        - The app will generate a password based on your preferences and show you its strength.
+        - Confirm: If you're satisfied with the generated password, confirm by typing "y" (yes). If not, you can generate another one.
+- The app will show how strenght and store the password, username, and account name in the CSV file.
+
+#### View all password
+
+## Needs Updated Below
 
 ### Imports
 The following modules were used in this script:
