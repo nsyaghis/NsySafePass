@@ -36,7 +36,7 @@ After you run nsyaghis, you'll see the main menu with three options:
 
 After selecting "Start," you'll see options to add a new password, view all stored passwords, or search for a password by account name.
 
-#### Add a New Password
+#### Add a new password
 - Enter Account Name: Type the name of the account (e.g., "instagram") and press Enter.
 - Enter Username: Type the username associated with the account and press Enter.
 - Enter Password:
@@ -50,9 +50,16 @@ After selecting "Start," you'll see options to add a new password, view all stor
 - The app will show how strenght and store the password, username, and account name in the CSV file.
 
 #### View all password
+The app will display all stored account names, usernames, and passwords on the screen.
+
+#### Search for a password
+- Enter Account Name: Type the name of the account you're looking for and press Enter.
+- If the account is found, the app will display the associated username and password. If not, it will tell you no entries were found.
+
+#### Back to main menu
+This option will take you to the main menu.
 
 ## Needs Updated Below
-
 ### Imports
 The following modules were used in this script:
 - csv
