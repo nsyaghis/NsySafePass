@@ -250,6 +250,7 @@ def main():
                 elif sub_choice == '3':
                     account = input("Enter the account name to search: ")
                     search_password(account)
+                    input("\nPress Enter to continue...")
 
                 elif sub_choice == '4':
                     break
