@@ -93,6 +93,9 @@ def view_passwords():
 # Cari Password
 def search_password(account):
     try:
+        display_header()
+        print("\n")
+
         with open(CSV_FILE, mode='r') as file:
             reader = csv.DictReader(file)
             matching_accounts = []
