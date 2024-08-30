@@ -29,7 +29,7 @@ cd nsysafepass
 
 #### Run it!
 ```
-python ./src/nsysafepass.py
+python3 ./src/nsysafepass.py
 ```
 
 ## How to use
