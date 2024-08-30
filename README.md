@@ -6,6 +6,8 @@ Warm regards,
 
 Naisya Aghis, the creator of this tool.
 
+
+[![YouTube Tutorial)](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=KnYuL7RDEnk)
 [![Follow on Instagram)](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/nsyaghis/)
 [![Follow on LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nsyaghis/)
 [![Follow on Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@nsyaghis)
@@ -14,6 +16,8 @@ Naisya Aghis, the creator of this tool.
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
 
 ## How To Install
+
+Checkout the tutorial on Youtube using this link: https://www.youtube.com/watch?v=KnYuL7RDEnk
 
 #### Clone this repository
 ```
