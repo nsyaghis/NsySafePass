@@ -6,7 +6,9 @@ Warm regards,
 
 Naisya Aghis, the creator of this tool.
 
-[![Follow on LinkedIn](https://img.shields.io/badge/Follow%20on%20LinkedIn-%230077B5.svg?style=social&logo=linkedin)](https://www.linkedin.com/in/nsyaghis/)
+[![Follow on Instagram)](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/nsyaghis/)
+[![Follow on LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nsyaghis/)
+[![Follow on Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@nsyaghis)
 
 ## How To Install
 
