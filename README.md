@@ -29,4 +29,23 @@ Run the tool!
 python ./src/nsysafepass.py
 ```
 
-Enjoy your day!🌻
+# Needs Updated Below
+
+### Imports
+The following modules were used in this script:
+- csv
+- os
+- random
+- string
+- re
+- getpass
+
+### Usage 
+__Python 2.7.x__
+python 
+
+__Python 3__
+python3 
+
+
+# Enjoy your day!🌻
