@@ -76,7 +76,5 @@ __Python 3__
 python3 
 
 ## Sample Screenshots
-![nsysafepass](https://github.com/user-attachments/assets/145f2521-c3d6-44e7-889b-39e8061a7c82)
-
 
 # Enjoy your day!🌻
